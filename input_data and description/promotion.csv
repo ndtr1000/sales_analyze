@@ -1,5 +1,5 @@
 promotion_id;category_id;promotion_name;category_name;partner_id;partner_name
-0;0;campaign_1;Бакалея;0;Google
-1;1;campaign_2;Фрукты;1;ООО Ширяева, Хохлова и Тимофеева
-2;2;campaign_3;Овощи;2;Всем партнёрам партнёр
-3;3;campaign_4;Прочее;3;KarpovCourses
+0;0;campaign_1;Electronics;0;Amazon
+1;1;campaign_2;Fructs;1;FOOD BAZAAR
+2;2;campaign_3;Food ;2;Target
+3;3;campaign_4;Another;3;Walmart
