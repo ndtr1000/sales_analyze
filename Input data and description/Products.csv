@@ -1,4 +1,4 @@
-﻿ProductsID;CategoryID;Product;SupplierID
+﻿products_id;category_id;product;supplier_id
 1;1;Lenin Jeansshorts;1
 2;1;Mr X Trousers;1
 3;2;Chantell Shirt;1
