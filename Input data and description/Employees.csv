@@ -1,0 +1,48 @@
+﻿EmployeeID;EmployeeName;Office;Reports To;Title
+1;Rock Roll;5;4;Sales Representative
+2;Elvis Presley;1;;President
+3;Rob Carsson;1;4;Sales Representative
+4;Joan Callins;3;2;Sales Manager
+5;Ingrid Hendrix;3;4;Sales Representative
+6;Lennart Skoglund;4;4;Sales Representative
+7;Tom Lindwall;2;4;Sales Representative
+8;Leif Shine;2;2;Sales Coordinator
+9;Helen Brolin;1;4;Sales Representative
+19;David Letterman;2;8;Product Manager
+20;John Cleaves;3;8;Product Manager
+21;Miro Takako;4;8;Product Manager
+22;Binh Protzmann;5;8;Product Manager
+23;Cezar Sandu;2;19;Systems Manager
+24;Cindy Crawford;2;19;Systems Manager
+25;James Bond;2;19;Systems Manager
+26;John Doe;2;19;Systems Manager
+27;Mario Kaddafi;5;22;Systems Manager
+28;Paul Dupont;5;22;Systems Manager
+29;Sven Svensson;5;22;Storeman
+30;Ira Baumel;5;22;Storeman
+31;Keith Helmkey;5;22;Storeman
+32;Rolf Wesenlund;3;20;Storeman
+33;Ann Lindquist;3;20;Storeman
+34;Bill Yang;3;20;Storeman
+35;Charles Ingvar Jönsson;3;20;Storeman
+36;Jacques Clouseau;3;20;Storeman
+37;Jerry Tessel;4;21;Network Manager
+38;John Lemon;4;21;Network Manager
+39;Marcus Salvatori;4;21;Storeman
+40;Olivier Simenon;4;21;Storeman
+41;Sunil Gupta;4;21;Storeman
+42;Östen Ärlig;1;3;Account Manager
+43;Bob Park;2;7;Account Manager
+44;Clark Kent;2;7;Account Manager
+45;Joe Cheng;3;5;Account Manager
+46;Kaya Alpan;3;5;Account Manager
+47;Michelle Tyson;4;6;Account Manager
+48;Ricardo Gucci;4;6;Account Manager
+49;Steve Cioazzi;1;2;Operator/Clerk
+50;Kenneth Finley;2;8;Operator/Clerk
+51;Lucky Luke;3;4;Operator/Clerk
+52;Mike Ashkenaz;1;42;Account Manager
+53;Richard Ranieri;2;23;Account Manager
+54;Sabrina Richards;3;32;Account Manager
+55;Sehoon Daw;4;37;Account Manager
+161;Stefan Lind;5;27;Account Manager
