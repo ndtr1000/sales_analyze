@@ -8,9 +8,9 @@
 Скрипты написаны для Apple с процессорами архитектуры ARM. Используемая версия OS - Monterey 12.2.1
 ---
 
-Описание файла `start_first.sh` и его команд:
+Описание файла `init_containers.sh` и его команд:
 
-`start_first` - скрипт файл для первого запуска докер, инициализации PostgreSQL, инициализации SuperSet, создание volume для PostgreSQL. Предпологается, что Docker уже скачан и установлен.
+`init_containers` - скрипт файл для первого запуска докер, инициализации PostgreSQL, инициализации SuperSet, создание volume для PostgreSQL, инициализация Jupyter NoteBook. Предпологается, что Docker уже скачан и установлен.
 
 `git clone https://github.com/apache/superset.git` - копирование SuperSet с репозитория Git;
 
@@ -20,12 +20,23 @@
 
 `docker-compose -f docker-compose-non-dev.yml pull` - используем docker compose для первичной инициализации SuperSet;
 
+docker pull jupyter/scipy-notebook:2023-02-28 - добавляем в Docker Jupyter NootBook
+---
+
+Описание файла `start_superset.sh` и его команд:
+
+`start_superset` - скрипт используется для запуска SuperSet;
+
+  
+`cd superset` - переходим в папку с SuperSet;
+
+`docker-compose -f docker-compose-non-dev.yml up` - используя docker-compose запускаем контейнер с SuperSet;
 
 ---
 
-Описание файла `start_post_superset.sh` и его команд:
+Описание файла `start_postgresql.sh` и его команд:
 
-`start_post_superset` - скрипт используется для запуска PostgreSQL и SuperSet;
+`start_postgresql` - скрипт для запуска PostgreSQL;
 
 `docker run --rm -d --name post_1 
   -e POSTGRES_PASSWORD=post_admin 
@@ -34,6 +45,10 @@
   --net=superset_default 
   -v postsql:/var/lib/postgresql/data postgres:14` - запускаем контейнер Docker, при выключении этого контейнера он будет удаляться, указываем имя контейнеру, прописываем параметры для БД, подключаем БД к локальной сети SuperSet, указываем где будет хранится volume;
   
-`cd superset` - переходим в папку с SuperSet;
+---
 
-`docker-compose -f docker-compose-non-dev.yml up` - используя docker-compose запускаем контейнер с SuperSet;
+Описание файла `start_jupyter.sh` и его команд:
+
+`start_jupyter` - скрипт для запуска Jupyter NoteBook;
+
+`docker run --rm -p 8888:8888 --net=superset_default -v ~/notebooks:/home/jovyan jupyter/scipy-notebook:2023-02-28` - запускаем контейнер Docker, при выключении контейнер будет очищаться, прописываем порты где будет запущен Jupyter, указываем сеть для работы между контейнерами и указываем путь куда будут сохраняться файлы Jupyter.
