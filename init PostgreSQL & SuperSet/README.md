@@ -21,6 +21,7 @@
 `docker-compose -f docker-compose-non-dev.yml pull` - используем docker compose для первичной инициализации SuperSet;
 
 `docker pull jupyter/scipy-notebook:2023-02-28` - добавляем в Docker Jupyter NootBook
+
 ---
 
 Описание файла `start_superset.sh` и его команд:
